@@ -1,18 +1,14 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import auth from "./modules/auth";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    count: 0,
-  },
-  getters: {},
-  mutations: {
-    increment(state) {
-      state.count++;
-    },
-  },
+  state: {},
+  mutations: {},
   actions: {},
-  modules: {},
+  modules: {
+    auth,
+  },
 });
